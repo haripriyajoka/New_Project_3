@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        .wrapper{
-            background: url("images/JP.jpg") no-repeat cover;
-            height: 100vh;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="wrapper">
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Architectes website</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            .wipper{
+                background: url("images/JP.jpg") no-repeat center center/cover;
+                height: 100vh;
+            }
+            .navbar{
+                height: 60px;
+                width: 100%;
+                background: rgba(0,0,0,0.4);
+            }
+            .logo{
+                color: black;
+                font-size: 35px;
+                font-family: Arial;
+                padding-left: 20px;
+                float: left;
+                padding-top: 10px;
+            }
+            .navbar ul{
+                float: right;
+                margin-right: 20px;
+            }
+            .navbar ul li{
+                list-style: none;
+                margin: 0 8px;
+                display: inline-block;
+                line-height: 80px;
+            }
+            .navbar ul li a{
+                text-decoration: none;
+                color: black;
+                font-size: 25px;
+                padding: 6px 13px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            .navbar ul li a.active,
+            .navbar ul li a:hover{
+                background: cadetblue;
+                border-radius: 2px;
+            }
+    
+        </style>
+    </head>
+    <body>
+        <div class="wipper">
+            <nav class="navbar">
+                <h1 class="logo">JP Architects</h1>
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+    
         </div>
-    </header>
-</body>
+        
+    </body>
 </html>
