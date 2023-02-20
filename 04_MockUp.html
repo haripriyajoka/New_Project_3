@@ -5,65 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Architectes website</title>
-        <style>
-            *{
-                padding: 0;
-                margin: 0;
-            }
-            .wipper{
-                background: url("images/JP.jpg") no-repeat center center/cover;
-                height: 100vh;
-            }
-            .navbar{
-                height: 60px;
-                width: 100%;
-                background: rgba(0,0,0,0.4);
-            }
-            .logo{
-                color: black;
-                font-size: 35px;
-                font-family: Arial;
-                padding-left: 20px;
-                float: left;
-                padding-top: 10px;
-            }
-            .navbar ul{
-                float: right;
-                margin-right: 20px;
-            }
-            .navbar ul li{
-                list-style: none;
-                margin: 0 8px;
-                display: inline-block;
-                line-height: 80px;
-            }
-            .navbar ul li a{
-                text-decoration: none;
-                color: black;
-                font-size: 25px;
-                padding: 6px 13px;
-                font-family: 'Times New Roman', Times, serif;
-            }
-            .navbar ul li a.active,
-            .navbar ul li a:hover{
-                background: cadetblue;
-                border-radius: 2px;
-            }
-            .wipper .center{
-            position: absolute;
-            top: 50%;
-            left: 55%;
-            transform: translate(-50%, -50%);
-            font-family: sans-serif;
-            }
-            .center h1{
-            color:black;
-            font-size: 60px;
-            font-weight: bold;
-            width: 900px;
-            text-align: center;
-            }
-        </style>
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
         <div class="wipper">
@@ -71,17 +13,94 @@
                 <h1 class="logo">JP Architects</h1>
                 <ul>
                     <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#Project">Project</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="center">
                 <h1>JP Architects</h1>
+                <button>Read More</button>
 
             </div>
     
         </div>
+        <section id="Project">
+            <div><br>
+                <h1>Project</h1>
+                <hr>
+                <div class="main">
+                    <div>
+                        <img src="./images/Renovated (1).jpg" alt="Renovated">
+                        <h4>Renovated</h4>
+                    
+                    </div>
+                    <div>
+                        <img src="./images/brick.jpg" alt="brick" aria-valuetext="Brick">
+                        <h4>Brick</h4>
+                    </div>
+                    <div>
+                        <img src="./images/barn.jpg" alt="barn">
+                        <h4>barn</h4>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+        <section id="About">
+            <div>
+                <h1>About</h1>
+                <hr><br>
+                <p style="font-family: 'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                    laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="Smain">
+                    <div>
+                        <img src="./images/john doe.jpg" alt="john doe">
+                        <h2>John Doe</h2>
+                        <h6>CEO & Founder</h6>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+                    <div>
+                        <img src="./images/jenny doe.jpg" alt="jenny doe">
+                        <h2>Jenny Doe</h2>
+                        <h6>Architect</h6>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+                    <div>
+                        <img src="./images/milk ross.jpg" alt="milk ross">
+                        <h2>Milk Ross</h2>
+                        <h6>Architect</h6>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+                    <div>
+                        <img src="./images/dane star.jpg" alt="dane star">
+                        <h2>Dane Star</h2>
+                        <h6>Architect</h6>
+                        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+                </div>
+            </div>
+        </section><br>
+        <section id="Contact">
+            <div>
+                <h1>Contact</h1>
+                <hr><br>
+                <form action="process.php" method="post">
+                    <p>Lets get in touch and talk about your next project.</p><br>
+                    <input type="text" placeholder="Name"><br><br>
+                    <input type="text" placeholder="Email"><br><br>
+                    <input type="text" placeholder="Subject"><br><br>
+                    <input type="text" placeholder="Contact"><br><br>
+                    <input class="button" type="submit" value="Send Message">
+                </form>
+    
+            </div>
+    
+        </section>
         
     </body>
 </html>
